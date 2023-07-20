@@ -12,6 +12,7 @@ Windows上で動作するアラーム・目覚ましアプリです。
 ### 開発環境
 開発環境：Visual Studio 2022<br>
 開発言語：C#
+[![My Skills](https://skillicons.dev/icons?i=visualstudio,cs)](https://skillicons.dev)
 ### 注意事項
 Form1.csの65行目の""の中に再生したいwavファイルのパスを記述してからご使用ください。<br>
 ```cs
