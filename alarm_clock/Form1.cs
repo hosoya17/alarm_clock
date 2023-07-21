@@ -39,9 +39,13 @@ namespace alarm_clock
             {
                 set = ((int.Parse(comboBox1.Text) - hour) * 60 * 60) + ((int.Parse(comboBox2.Text) - min) * 60) - sec;
             }
-            else if (hour == int.Parse(comboBox1.Text))
+            else if (hour == int.Parse(comboBox1.Text) && min < int.Parse(comboBox2.Text))
             {
                 set = ((int.Parse(comboBox1.Text) - hour) * 60 * 60) + ((int.Parse(comboBox2.Text) - min) * 60) - sec;
+            }
+            else if (min >= int.Parse(comboBox2.Text))
+            {
+                set = ((24 - hour + int.Parse(comboBox1.Text)) * 60 * 60) + ((int.Parse(comboBox2.Text) - min) * 60) - sec;
             }
             else
             {
@@ -62,7 +66,7 @@ namespace alarm_clock
             button2.Visible = true;
             button3.Visible = true;
 
-            string soundFilePath = "";//wavファイルのパスを指定してください.。
+            string soundFilePath = "C:\\C#\\Sound\\Clock-Alarm03-01(Mid-Loop).wav";//wavファイルのパスを指定してください.。
             player = new SoundPlayer(soundFilePath);
             player.PlayLooping();
         }
