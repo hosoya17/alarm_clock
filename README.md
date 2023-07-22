@@ -13,7 +13,8 @@ Windows上で動作するアラーム・目覚ましアプリです。
 開発言語：C#<br>
 [![My Skills](https://skillicons.dev/icons?i=visualstudio,cs)](https://skillicons.dev)
 ### 注意事項
-Form1.csの65行目の""の中に再生したいwavファイルのパスを記述してからご使用ください。<br>
+Form1.csの69行目の""の中はご自身の再生したいwavファイルのパスに変更してからご使用ください。<br>
+変更しない場合、プログラムは正しく動作しません。<br>
 ```cs
-string soundFilePath = "";//wavファイルのパスを指定してください.。
+string soundFilePath = "C:\\C#\\Sound\\Clock-Alarm03-01(Mid-Loop).wav";//wavファイルのパスを指定してください。
 ```
